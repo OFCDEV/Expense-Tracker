@@ -1,6 +1,6 @@
 const mongoose =  require('mongoose');
 
-const IncomeSchema = new mongoose.Schema({
+const ExpenseSchema = new mongoose.Schema({
     title: {
         type:String,
         requied:true,
@@ -33,6 +33,6 @@ const IncomeSchema = new mongoose.Schema({
         maxLength:20,
         trim:true   //removing spaces
     },
-},{timeStamps:true})
+},{timeStamps:true})    //timestamp-->when we updated/added
 
-module.exports = mongoose.model('Income',IncomeSchema)
+module.exports = mongoose.model('Expense',ExpenseSchema)
