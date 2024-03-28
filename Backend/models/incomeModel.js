@@ -33,6 +33,6 @@ const IncomeSchema = new mongoose.Schema({
         maxLength:20,
         trim:true   //removing spaces
     },
-},{timeStamps:true})
+},{timeStamps:true})    //timestamp-->when we updated/added
 
 module.exports = mongoose.model('Income',IncomeSchema)
